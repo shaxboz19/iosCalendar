@@ -1,0 +1,393 @@
+/* variables */
+
+:root {
+    --color-dark-red: rgb(255, 104, 90);
+    --color-light-red: rgba(255, 104, 90, 0.24);
+    --color-dark-blue: rgb(14, 116, 150);
+    --color-light-blue: rgba(14, 116, 150, 0.48);
+    --color-aqua: #ECF4F7;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-primary: #037BFF;
+}
+
+/* variables */
+
+/* global settings */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* button settings */
+.ant-btn {
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.ant-btn::after {
+    box-shadow: unset !important;
+}
+
+.ant-btn.light-red {
+    background-color: var(--color-light-red);
+    color: var(--color-dark-red);
+}
+
+.ant-btn.dark-red {
+    background-color: var(--color-dark-red);
+    color: var(--color-white);
+}
+.ant-btn.light-blue {
+    background-color: var(--color-aqua);
+    color: var(--color-dark-blue);
+}
+
+button.no-bg {
+    background-color: transparent;
+    border: none;
+    height: max-content;
+
+}
+
+
+
+/* button settings */
+/* global settings */
+
+
+/* template layout start */
+#__layout {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 575px;
+    width: 100%;
+}
+
+.pages-wrapper {
+    min-height: calc(100vh - 44px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+.pages-wrapper * {
+    text-align: center;
+}
+
+.pages-action {
+    margin-top: auto;
+}
+
+
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+/* layout > header */
+.header .container {
+    padding: 0 16px;
+}
+
+.header-wrapper {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header h3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: var(--color-black);
+    font-family: 'ALS Hauss', sans-serif;
+
+}
+
+.header-wrapper button {
+    font-family: 'ALS Hauss', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.header-wrapper i {
+    font-size: 18px;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+/* layout > header */
+
+/* default page > logo */
+.logo {
+    margin: 16px 0;
+}
+
+/* default page > logo */
+
+
+/* default page > home */
+.home {
+    margin-bottom: 16px;
+}
+
+.home-card {
+    padding: 12px 16px;
+    background: var(--color-aqua);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 96px;
+}
+
+.home-card h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.home-card span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.home-card span.home-card-blue {
+    color: var(--color-dark-blue);
+}
+
+.home-card span.home-card-blue span {
+    color: var(--color-light-blue);
+    margin-left: 4px;
+}
+
+.home-card span.home-card-red {
+    color: var(--color-dark-red);
+}
+
+
+
+/* default page > home */
+/* default page > employment */
+.employment-card {
+    background: #ECF4F7;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.employment-card h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0A3341;
+}
+
+/* default page > employment */
+/* employment > ddtail*/
+.employment-detail-video {
+    height: 210px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.employment-detail-video video,
+.employment-detail-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.employment-detail-video i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    background: #0E7496;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.employment-detail-header {
+    margin-bottom: 24px;
+}
+
+.employment-detail-header h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.employment-detail-header span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0E7496;
+    display: block;
+}
+
+.employment-detail-content {
+    margin-bottom: 16px;
+}
+
+.employment-detail-content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.employment-detail-content b,
+.employment-detail-content i,
+.employment-detail-content ul li,
+.employment-detail-content p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+
+
+}
+
+.employment-detail-content ul li,
+.employment-detail-content p {
+    font-weight: 400;
+}
+
+.employment-detail-content b {
+    display: block;
+}
+
+/* employment > ddtail*/
+/* myofascial */
+
+
+.exercise {
+    margin: 40px 0;
+}
+
+.exercise ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.exercise ul li {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.24;
+    margin-bottom: 32px;
+}
+
+.exercise ul li:last-child {
+    margin-bottom: 0;
+}
+
+.exercise ul li .exercise-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-black);
+    margin-bottom: 8px;
+}
+
+.exercise ul li .exercise-count {
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+    color: var(--color-dark-blue);
+}
+
+.exercise ul li .exercise-time {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-dark-blue);
+}
+
+.exercise ul li.active {
+    opacity: 1;
+}
+
+/* myofascial */
+/* resultÎ */
+.result {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result img {
+    height: 120px;
+    margin-bottom: 24px;
+}
+.result h2 {
+    margin-bottom: 8px;
+}
+.result p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.result p b {
+    display: block;
+}
+.col-link {
+    cursor: pointer;
+}
+/* resultÎ */
+
+/* template layout end */
