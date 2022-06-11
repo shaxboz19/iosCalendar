@@ -393,6 +393,10 @@ button.no-bg {
 .col-link {
     cursor: pointer;
 }
+
+.smooth-picker {
+    color: var(--tg-theme-text-color);
+}
 /* resultÎ */
 
 /* template layout end */

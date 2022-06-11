@@ -97,7 +97,7 @@ export default {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: var(--tg-theme-text-color);
 }
 
 .popup-header i {
