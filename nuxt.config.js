@@ -48,26 +48,36 @@ export default {
       src: "@/plugins/VueScroll.js",
       ssr: false
     },
+    {
+      src: "@/plugins/error.js",
+      mode: "client"
+    },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    "@nuxtjs/moment"
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/toast',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: 'https://m.bot-marketing.com/api/public/tunnelSessions',
   },
-
+  toast: {
+    position: 'top-center',
+    duration: 3000,
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
 }

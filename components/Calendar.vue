@@ -170,7 +170,7 @@ export default {
       date = this.$moment(date).format("YYYY-MM-DD HH:mm:ss");
       try {
         const { data } = await this.$axios.post(`/${this.client}/request`, {
-          code: "change_date",
+          code: "submit",
           params: {
             date: date,
           },
