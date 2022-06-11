@@ -48,6 +48,7 @@ export default {
       },
     },
   },
+  mounted() {},
   methods: {
     Close() {
       this.$emit("close");

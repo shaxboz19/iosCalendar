@@ -9,6 +9,10 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    let tg = window.Telegram.WebApp;
+    tg.expand();
+  },
   methods: {},
 };
 </script>
