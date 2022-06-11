@@ -1,6 +1,8 @@
 <template>
   <div class="page _1">
-    <Calendar />
+    <client-only>
+      <Calendar />
+    </client-only>
   </div>
 </template>
 
