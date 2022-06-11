@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Calendar v-if="isEdit" />
+  <div class="page _1">
+    <Calendar />
   </div>
 </template>
 
@@ -8,14 +8,10 @@
 export default {
   name: "IndexPage",
   data() {
-    return {
-      isEdit: false,
-    };
+    return {};
   },
-  mounted() {
-    setTimeout(() => {
-      this.isEdit = true;
-    }, 300);
-  },
+  mounted() {},
+  methods: {},
 };
 </script>
+<style></style>
