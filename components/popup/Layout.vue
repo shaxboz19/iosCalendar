@@ -8,7 +8,6 @@
         <slot name="body"></slot>
       </div>
       <div class="popup-footer" v-if="isFooter">
-        <a-button class="light-red" @click="Close">Отмена</a-button>
         <a-button class="red" @click="access" v-if="isAccess">Готово</a-button>
       </div>
     </div>
@@ -82,7 +81,7 @@ export default {
 
 .popup-wrapper {
   width: 100%;
-  background-color: white;
+  background-color: var(--tg-theme-bg-color);
   border-radius: 8px;
 }
 
@@ -142,15 +141,15 @@ export default {
   margin: 0 8px;
 }
 .red {
-  background-color: #ff685a;
-  color: #fff;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
 }
 .red:hover {
-  background-color: #ff685a;
-  color: #fff;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
 }
 .red:focus {
-  background-color: #ff685a;
-  color: #fff;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
 }
 </style>

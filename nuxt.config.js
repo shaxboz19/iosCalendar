@@ -40,7 +40,7 @@ export default {
     'static/fonts/icomoon/style.css',
     'static/css/main.css',
   ],
-
+  ssr: false,
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '@/plugins/antd-ui',
