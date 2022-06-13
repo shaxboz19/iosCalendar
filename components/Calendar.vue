@@ -172,7 +172,7 @@ export default {
         const { data } = await this.$axios.post(`/${this.client}/request`, {
           code: "submit",
           params: {
-            date: date,
+            targetDate: date,
           },
         });
         this.$store.commit("home/setVariables", data.variables);
